@@ -107,6 +107,11 @@ int ChatBot::ComputeLevenshteinDistance(std::string s1, std::string s2)
     const size_t m(s1.size());
     const size_t n(s2.size());
 
+    std::cout << "s1: " << s1 << std::endl;
+    std::cout << "s2: " << s2 << std::endl;
+    std::cout << "n: " << n << std::endl;
+    std::cout << "m: " << m << std::endl;
+
     if (m == 0)
         return n;
     if (n == 0)
@@ -144,5 +149,6 @@ int ChatBot::ComputeLevenshteinDistance(std::string s1, std::string s2)
     int result = costs[n];
     delete[] costs;
 
+    std::cout << "result: " << result << std::endl;
     return result;
 }
