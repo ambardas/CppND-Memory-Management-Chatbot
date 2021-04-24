@@ -32,7 +32,7 @@ ChatLogic::~ChatLogic()
     //// STUDENT CODE
     ////
 
-    // delete chatbot instance
+    // delete chatbot instance created at constructor of Chatlogic
     delete _chatBot;
 
     // delete all nodes
